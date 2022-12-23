@@ -5,8 +5,8 @@ Library                         String
 
 
 *** Variables ***
-${username}                     YOUR USERNAME HERE
-${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+# ${login_url}                    https://YOURDOMAIN.my.salesforce.com                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
+${login_url}                    https://slockard-dev-ed.lightning.force.com/                    # Salesforce instance. NOTE: Should be overwritten in CRT variables
 ${home_url}                     ${login_url}/lightning/page/home
 ${BROWSER}                      chrome
 
@@ -24,6 +24,7 @@ End suite
 
 
 Login
+    # username and password are defined as variables on suite level
     [Documentation]             Login to Salesforce instance
     Set Library Search Order    QWeb                        QForce
     GoTo                        ${login_url}
