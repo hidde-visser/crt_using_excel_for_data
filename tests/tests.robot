@@ -29,8 +29,8 @@ Entering A Lead With Data
     TypeText        Company                     ${Company}                  Last Name
     TypeText        Website                     ${Website}
 
-    ClickText       Lead Source
-    ClickText       Advertisement
+    
+    Picklist        Lead Source                 Other
     ClickText       Save                        partial_match=False
     UseModal        Off
     Sleep           1
