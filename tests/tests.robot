@@ -20,7 +20,7 @@ Entering A Lead With Data
 
     Log To Console    Entering a lead...
     ClickText         Leads
-    VerifyText        Recently Viewed             timeout=120s
+    VerifyText        Recently Viewed             timeout=121s
     ClickText         New
     VerifyText        Lead Information
     UseModal          On                          # Only find fields from open modal dialog
