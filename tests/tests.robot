@@ -1,19 +1,17 @@
 *** Settings ***
 Resource                      ../resources/common.robot
-Library                       DataDriver    reader_class=TestDataApi    name=leadstest.csv    #iterates through the Leads csv
+Library                       DataDriver    reader_class=TestDataApi    name=Leads.csv    #iterates through the Leads csv
 Suite Setup                   Setup Browser
 Suite Teardown                End suite
 Test Template                 Entering A Lead With Data
 
 *** Test Cases ***
-Entering A Lead With Data with ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}    
+Entering A Lead With Data with ${First Name} ${Last Name}    ${Phone}    ${Company}    ${Website}
     [Tags]                    AllData
-
 *** Keywords ***
 Entering A Lead With Data
     [Arguments]               ${First Name}    ${Last Name}    ${Phone}    ${Company}    ${Website}
     [tags]                    Lead
-    Log Variables
     Home
     LaunchApp                 Sales
     LaunchApp                 Sales
