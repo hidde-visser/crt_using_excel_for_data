@@ -24,7 +24,7 @@ Entering A Lead With Data
 
     TypeText        First Name                  ${First Name}
     TypeText        Last Name                   ${Last Name}
-    Picklist        Lead Status                 Working
+    Picklist        Lead Status                 Working - Contacted
     TypeText        Phone                       ${Phone}                    First Name
     TypeText        Company                     ${Company}                  Last Name
     TypeText        Website                     ${Website}
