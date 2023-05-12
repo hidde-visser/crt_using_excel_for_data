@@ -36,7 +36,8 @@ Entering A Lead With Data
     ClickText         Save                        partial_match=False
     UseModal          Off
     Sleep             1
-    Log To Console    Lead has been saved...
+    VerifyText        Lead "${First Name}" was created.
+    Log To Console    Lead: ${First Name} has been saved...
 
     #Delete the lead to clean up data
     LaunchApp         Sales
@@ -49,6 +50,8 @@ Entering A Lead With Data
     Log To Console    Lead has been deleted...
 
     ClickText         Delete
+    Sleep             1
     VerifyText        Recently Viewed
+    
     VerifyNoText      ${First Name}
     VerifyNoText      ${Last Name}
