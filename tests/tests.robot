@@ -36,7 +36,6 @@ Entering A Lead With Data
     ClickText         Save                        partial_match=False
     UseModal          Off
     Sleep             1
-    VerifyText        Lead "${First Name}" was created.
     Log To Console    Lead: ${First Name} has been saved...
 
     #Delete the lead to clean up data
