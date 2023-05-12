@@ -16,7 +16,6 @@ Entering A Lead With Data
     [tags]            Lead
     Home
     LaunchApp         Sales
-    LaunchApp         Sales
 
     Log To Console    Entering a lead...
     ClickText         Leads
