@@ -37,6 +37,7 @@ Home
     [Documentation]             Navigate to homepage, login if needed
     Set Library Search Order    QWeb                        QForce
     GoTo                        ${home_url}
+    Sleep                       2s
     ${login_status} =           IsText                      To access this page, you have to log in to Salesforce.    2
     Run Keyword If              ${login_status}             Login
     ClickText                   Home
