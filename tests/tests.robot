@@ -15,7 +15,7 @@ Entering A Lead With Data
     [Arguments]       ${First Name}               ${Last Name}                ${Phone}          ${Company}                  ${Website}
     [tags]            Lead
     Home
-    LaunchApp         Sales
+    LaunchApp         Accounts
 
     Log To Console    Entering a lead...
     ClickText         Leads
